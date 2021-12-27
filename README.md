@@ -1,14 +1,19 @@
-# Proyecto Web | Idea Koropatczyk
+# Proyecto React js MyApp | Idea Koropatczyk
 
-_Este es mi proyecto de página web para el curso de React js de CoderHouse. Está direccionado a un ecommerce (ficticio) de venta de ropa de mujer llamado "KALANCHOE"_
+_Este es mi proyecto de página web para el curso de React js de CoderHouse. Está direccionado a un ecommerce (ficticio) de venta de ropa de mujer llamado_ "KALANCHOE 🌸 "
+Al Tutor/ Profesor:
+                    GITHUB predeterminadamente busca el archivo index.html. Al no encontrarlo abre el README.md así que hice está aclaración por las dudas.
 
 ## Conectando 🚀
 
 _Acá el link al Repositorio_
 (https://github.com/DemianKoro/myApp)
 
-_Acá el link al proyecto_
+_Acá el link al proyecto myApp_
 (https://demiankoro.github.io/myApp/)
+
+_Acá el link al sitioWeb_
+(https://demiankoro.github.io/Kalanchoe/)
 
 ### Mapa del Sitio 📋
 
@@ -23,6 +28,8 @@ _Contacto_
 
 _No requiere_
 
+
+
 ## Construido con 🛠️
 
 * [Visual Studio Code](https://code.visualstudio.com/) - Editor de código
@@ -33,14 +40,6 @@ _No requiere_
 * [REACT](https://es.reactjs.org/) - Librería de Js
 
 
-
-<!--## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)-->
 
 ## Autores ✒️
 
@@ -55,8 +54,8 @@ Este proyecto está bajo la Licencia (DemianKoro) - mira el archivo [LICENSE.md]
 ## Expresiones de Gratitud 🎁
 
 * A mi pareja que me apoya y me incentiva. ❤️
-<!-- * Al profesor Maximiliano Torreblanca. 🤓
-* A la tutora Ayelén Campot. 🤓 -->
+* Al profesor Conrado Lanusse. 🤓
+* A la tutora Dylan Gavilán. 🤓 
 
 ---
 ⌨️ por [DemianKoro](https://github.com/DemianKoro) 😊
