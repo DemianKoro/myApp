@@ -54,7 +54,7 @@ Este proyecto está bajo la Licencia (DemianKoro) - mira el archivo [LICENSE.md]
 
 * A mi pareja que me apoya y me incentiva. ❤️
 * Al profesor Conrado Lanusse. 🤓
-* A la tutora Dylan Gavilán. 🤓 
+* Al tutor Dylan Gavilán. 🤓 
 
 ---
 ⌨️ por [DemianKoro](https://github.com/DemianKoro) 😊
