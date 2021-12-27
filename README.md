@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Proyecto Web | Idea Koropatczyk
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_Este es mi proyecto de página web para el curso de React js de CoderHouse. Está direccionado a un ecommerce (ficticio) de venta de ropa de mujer llamado "KALANCHOE"_
 
-## Available Scripts
+## Conectando 🚀
 
-In the project directory, you can run:
+_Acá el link al Repositorio_
+(https://github.com/DemianKoro/myApp)
 
-### `npm start`
+_Acá el link al proyecto_
+(https://demiankoro.github.io/myApp/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Mapa del Sitio 📋
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+_Index_
+_Home_
+_New_
+_Sale_
+_Colección_
+_Contacto_
 
-### `npm test`
+### Instalación 🔧
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+_No requiere_
 
-### `npm run build`
+## Construido con 🛠️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor de código
+* [Nodemon](https://nodemon.io/) - Monitor de cambios en tiempo real
+* [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/download/) - Framework Front-end toolkit
+* [GIT](https://git-scm.com/) - Repository branch manager
+* [GITHUB](https://github.com/) - Repository online
+* [REACT](https://es.reactjs.org/) - Librería de Js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+<!--## Contribuyendo 🖇️
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wiki 📖
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)-->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Autores ✒️
 
-## Learn More
+* **Demian Koro** - *Trabajo Inicial* - [DemianKoro](https://github.com/DemianKoro)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licencia 📄
 
-### Code Splitting
+Este proyecto está bajo la Licencia (DemianKoro) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Expresiones de Gratitud 🎁
 
-### Analyzing the Bundle Size
+* A mi pareja que me apoya y me incentiva. ❤️
+<!-- * Al profesor Maximiliano Torreblanca. 🤓
+* A la tutora Ayelén Campot. 🤓 -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+⌨️ por [DemianKoro](https://github.com/DemianKoro) 😊
