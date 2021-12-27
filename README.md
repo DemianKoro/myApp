@@ -1,8 +1,8 @@
 # Proyecto React js MyApp | Idea Koropatczyk
 
 _Este es mi proyecto de página web para el curso de React js de CoderHouse. Está direccionado a un ecommerce (ficticio) de venta de ropa de mujer llamado_ "KALANCHOE 🌸 "
-Al Tutor/ Profesor:
-                    GITHUB predeterminadamente busca el archivo index.html. Al no encontrarlo abre el README.md así que hice está aclaración por las dudas.
+### Al Tutor/ Profesor:
+####                    GITHUB predeterminadamente busca el archivo index.html. Al no encontrarlo abre el README.md así que hice está aclaración por las dudas.
 
 ## Conectando 🚀
 
