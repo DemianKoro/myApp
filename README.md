@@ -1,19 +1,20 @@
 # Proyecto React js MyApp | Idea Koropatczyk
 
 _Este es mi proyecto de página web para el curso de React js de CoderHouse. Está direccionado a un ecommerce (ficticio) de venta de ropa de mujer llamado_ "KALANCHOE 🌸 "
+
 ### Al Tutor/ Profesor:
-####                    GITHUB predeterminadamente busca el archivo index.html. Al no encontrarlo abre el README.md así que hice está aclaración por las dudas.
+#### GITHUB predeterminadamente busca el archivo index.html. Al no encontrarlo abre el README.md así que hice está aclaración por las dudas.
 
 ## Conectando 🚀
 
 _Acá el link al Repositorio_
-(https://github.com/DemianKoro/myApp)
+* [Repositorio myApp](https://github.com/DemianKoro/myApp)
 
 _Acá el link al proyecto myApp_
-(https://demiankoro.github.io/myApp/)
+* [myApp](https://demiankoro.github.io/myApp/)
 
 _Acá el link al sitioWeb_
-(https://demiankoro.github.io/Kalanchoe/)
+* [KALANCHOE🌸](https://demiankoro.github.io/Kalanchoe/)
 
 ### Mapa del Sitio 📋
 
@@ -27,8 +28,6 @@ _Contacto_
 ### Instalación 🔧
 
 _No requiere_
-
-
 
 ## Construido con 🛠️
 
