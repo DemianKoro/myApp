@@ -1,0 +1,16 @@
+.nav {
+    background-color: #e7a5d3;
+    color: ivory;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: ivory;
+    font-weight: lighter;
+}
