@@ -1,9 +1,13 @@
 import './ItemListContainer.css';
+import Products from './Products/Products';
 
-const ItemListContainer = ({name}) => {
+const ItemListContainer = ({titleName}) => {
     return (
         <>
-        <h3 className='nameItem'>{name}</h3>
+        <h3 className='nameItem'>{titleName}</h3>
+        <div className="product" >
+           <Products productName="Vestido" productPrice={"$17.800"}/>
+        </div>
         </>
     )
 };

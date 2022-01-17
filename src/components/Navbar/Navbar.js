@@ -1,6 +1,7 @@
 import './Navbar.css';
 import CartWidget from './CartWidget/CartWidget';
 import NavIcon from './NavIcon/NavIcon';
+import CartCounter from './CartCounter/CartCounter';
 
 function Navbar() {
     return <nav className='nav'>
@@ -20,6 +21,7 @@ function Navbar() {
                     </li>
                     <li>
                         <CartWidget />
+                        <CartCounter number={1} />
                     </li>
                 </ul>
                 
