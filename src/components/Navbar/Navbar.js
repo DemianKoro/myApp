@@ -2,8 +2,12 @@ import './Navbar.css';
 import CartWidget from './CartWidget/CartWidget';
 import NavIcon from './NavIcon/NavIcon';
 import CartCounter from './CartCounter/CartCounter';
+import ItemCount from '../ItemListContainer/ItenCount/ItemCount';
 
 function Navbar() {
+
+    const qty = null;
+
     return <nav className='nav'>
                 <h1>KALANCHOE</h1>
                 <ul className='ulNav'>
@@ -19,9 +23,10 @@ function Navbar() {
                     <li>
                         <a href='./404.html'>CONTACT</a>
                     </li>
-                    <li>
+                    <li className='cartLi'>
                         <CartWidget />
-                        <CartCounter number={1} />
+                        {/* <CartCounter amount={qty} /> */}
+                        <CartCounter />
                     </li>
                 </ul>
                 

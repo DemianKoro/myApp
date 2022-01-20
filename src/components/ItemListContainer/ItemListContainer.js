@@ -1,12 +1,14 @@
 import './ItemListContainer.css';
+import ItemCount from './ItenCount/ItemCount';
 import Products from './Products/Products';
 
 const ItemListContainer = ({titleName}) => {
     return (
         <>
-        <h3 className='nameItem'>{titleName}</h3>
-        <div className="product" >
-           <Products productName="Vestido" productPrice={"$17.800"}/>
+        <h3 className="nameItem">{titleName}</h3>
+        <ItemCount cero="0"/>
+        <div className='cardContainer' >
+           <Products />
         </div>
         </>
     )

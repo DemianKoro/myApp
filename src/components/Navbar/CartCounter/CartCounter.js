@@ -1,9 +1,10 @@
 import React from 'react'
+import ItemCount from '../../ItemListContainer/ItenCount/ItemCount'
 
-const CartCounter = ({number}) => {
+const CartCounter = () => {
     return (
         <>
-          <p>{number}</p>  
+          <p></p>  
         </>
     )
 }

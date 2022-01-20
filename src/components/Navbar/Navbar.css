@@ -1,6 +1,10 @@
 .nav {
     background-color: #e7a5d3;
     color: ivory;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 ul {
     list-style: none;
@@ -20,4 +24,8 @@ a {
     text-decoration: none;
     color: ivory;
     font-weight: lighter;
+}
+
+.cartLi {
+    color: ivory;
 }

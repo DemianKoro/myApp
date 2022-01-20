@@ -1,7 +1,6 @@
 .nameItem {
     background-color: #e7a5d3;
     color: #506f77;
-    font-weight: lighter;
     margin: 0;
     padding: 0;
 }
@@ -9,9 +8,15 @@
 .product {
     background-color: #e7a5d3;
     color: ivory;
-    width: 8rem;
-    border-color: tomato;
+    width: 12rem;
+    height: 6rem;
+    border: 2px solid ivory;
     border-radius: 1rem;
     justify-self: center;
+   
 }
 
+.cardContainer {
+    background-color: tomato;
+    padding: 1rem;
+}
