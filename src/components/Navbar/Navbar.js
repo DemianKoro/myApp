@@ -1,4 +1,4 @@
-import './Navbar.css';
+import './Navbar.scss';
 import CartWidget from './CartWidget/CartWidget';
 import NavIcon from './NavIcon/NavIcon';
 import CartCounter from './CartCounter/CartCounter';

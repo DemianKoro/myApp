@@ -1,0 +1,15 @@
+.item__card {
+  border: 2px solid rgb(19, 18, 18);
+  height: 400px;
+  width: 300px;
+  .img__container {
+    height: 100%;
+    background-color: unset;
+    overflow: hidden;
+    // img {
+    //   width: 100%;
+    //   height: auto;
+    //   object-fit: cover;
+    // }
+  }
+}

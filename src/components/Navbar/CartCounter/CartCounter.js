@@ -5,7 +5,7 @@ const CartCounter = () => {
 
   return (
       <>
-        <OnAdd cantidad='0'/>
+        <OnAdd cant="0"/>
       </>
   )
 

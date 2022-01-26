@@ -28,9 +28,9 @@ export const PRODUCTS =  [
     }
   ]
   
-  export function getProducts() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => resolve(PRODUCTS), 3000);
-    });
-  }
+  // export function getProducts() {
+  //   return new Promise((resolve, reject) => {
+  //     setTimeout(() => resolve(PRODUCTS), 3000);
+  //   });
+  // }
 

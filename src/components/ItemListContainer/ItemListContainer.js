@@ -1,17 +1,37 @@
-import './ItemListContainer.css';
-import ItemCount from './ItenCount/ItemCount';
-import Products from './Products/Products';
+import { useEffect, useState } from "react";
+import Item from "./Item/Item";
+import "./ItemListContainer.scss";
 
-const ItemListContainer = ({titleName}) => {
+const URL = "http://localhost:3001/productos";
+
+const ItemContainer = () => {
+  const [prod, setProd] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    setIsLoading(true);
+    fetch(URL)
+      .then((response) => response.json())
+      .then((json) => setProd(json))
+      .catch((err) => setError(err))
+      .finally(() => setIsLoading(false));
+  }, []);
+
+  if (isLoading) {
+    return <p>Cargando Productos...</p>;
+  } else if (error) {
+    return <p>Ha habido un error {error.message}</p>;
+  } else
     return (
-        <>
-        <h3 className="nameItem">{titleName}</h3>
-        <ItemCount />
-        <div className='cardContainer' >
-           <Products />
-        </div>
-        </>
-    )
+      <div>
+        <ul className="item__container">
+          {prod.map((product) => {
+            return <Item key={product.id} product={product} />;
+          })}
+        </ul>
+      </div>
+    );
 };
 
-export default ItemListContainer;
+export default ItemContainer;

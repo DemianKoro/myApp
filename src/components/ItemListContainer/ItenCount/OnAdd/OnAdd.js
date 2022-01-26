@@ -1,6 +1,7 @@
 import { useState } from "react"
+import './OnAdd.css';
 
-function OnAdd(cantidad) {
+function OnAdd(cant) {
 
   const [stock, setStock] = useState(false);
   const buttonMore = () => {
@@ -18,12 +19,13 @@ function OnAdd(cantidad) {
 
   return (
     <div className="cantidad">
-        {qty ? <p>{stock}</p> : <p>0</p> }
+        {qty ? <p>{stock}</p> : <p>0</p>}
+        <div className="botones">
         <button onClick={buttonLess}type="button" className="btn">-</button>
         <p>{stock}</p>
         <button onClick={buttonMore} type="button" className="btn">+</button> 
-        
         {qty ? <button onClick={ButtonAdd} type="button" >Quitar</button> : <button onClick={ButtonAdd} type="button" >Agregar</button>}
+        </div>
     </div>
   );
 
