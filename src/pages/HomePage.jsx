@@ -6,7 +6,7 @@ const HomePage = () => {
 
   const goToProducts = () => {
     // Solo si el user está logueado
-    const logueado = false;
+    const logueado = true;
     if (logueado) {
       navigate("/products");
     } else {
