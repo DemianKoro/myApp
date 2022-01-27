@@ -7,13 +7,13 @@ import "./Item.scss";
 
 const Item = ({ product }) => {
   const navigate = useNavigate();
-  const URL= (`../../images/image0${product.id}.jpg`);
+  // const URL= (`../../images/image0${product.id}.jpg`);
 
   
   return (
     <div className="item__card">
       <div className="img__container">
-        <img src={URL} alt={product.nombre} />
+        <img src={product.imagen} alt={product.nombre} />
       </div>
       <div className="descripcion">
         <p>{product.nombre}</p>

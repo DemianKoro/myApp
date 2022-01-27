@@ -2,28 +2,29 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ProductDetailPage = () => {
-  const { productId } = useParams();
+  const { id } = useParams();
   const [product, setProduct] = useState();
   const [isLoading, setIsLoading] = useState(false);
 
-  // console.log(3 === Number(productId));
-
+  
   useEffect(() => {
-    const URL = `http://localhost:3001/productos/${productId}`;
+    const URL = `http://localhost:3001/productos/${id}`;
+    // console.log(product);
+
     setIsLoading(true);
     fetch(URL)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .finally(() => setIsLoading(false));
-  }, [productId]);
+  }, [id]);
 
   if (isLoading || !product) return <p>Cargando...</p>;
   return (
     <div>
-      <h1>{product.name}</h1>
-      <img src={product.img} alt={product.name} />
-      <p>{product.description}</p>
-      <p>{product.price}</p>
+      <h1>{product.nombre}</h1>
+      <img src={product.imagen} alt={product.nombre} />
+      <p>Descripción: {product.descripcion}</p>
+      <p>Precio: $ {product.precio}</p>
     </div>
   );
 };

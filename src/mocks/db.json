@@ -6,7 +6,7 @@
        "nombre": "Vestido Snail",
        "precio": 17700,
        "descripcion": "Vestido corto estampado con mangas. Abierto adelante con pequeños botones, escote en V. Presenta botones en puños.",
-       "imagen": "../../../images/image01.jpg",
+       "imagen": "https://i.postimg.cc/5NWNNdHh/image01.jpg",
        "stock": 34,
        "tipo": "Vestido"
      },
@@ -16,7 +16,7 @@
        "descripcion": "Sweater con escote redondo y moldería al cuerpo. Tiene estampa de rayas zigzag multicolor sobre fondo crudo o azul. Ideal para combinar con jeans en tu look de todos los días.",
        "precio": 18800,
        "stock": 20,
-       "imagen": "../../../images/image02.jpg",
+       "imagen": "https://i.postimg.cc/qMcBNbyz/image02.jpg",
        "tipo": "Sweater"
      },
      {
@@ -25,7 +25,7 @@
        "descripcion": "Vestido largo estampado de manga larga. Cuello redondo. Combina muy bien con botas altas hasta la rodilla y maquillaje en los parpados con purpurina.",
        "precio": 19500,
        "stock": 1,
-       "imagen": "../../../images/image03.jpg",
+       "imagen": "https://i.postimg.cc/jSsxPH4v/image03.jpg",
        "tipo": "Vestido"
      }
    ],
