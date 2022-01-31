@@ -1,0 +1,70 @@
+$colorBrand: #200d2c;
+$colorItems: ivory;
+$colorTitle: ivory;
+$colorNeon: #ff96ad;
+$colorShadow1: #B28969;
+$colorShadow2: #E0CDBE;
+$colorBG404: #E3C084;
+$colorFondoVerde: #dd90ca;
+$colorBlack: black;
+
+@mixin neon() {
+    border: 2px solid $colorNeon;
+    background-color: $colorNeon;
+    border-radius: 6px;
+    box-shadow: 0 0 5px $colorNeon,
+                0 0 25px $colorNeon,
+                0 0 50px $colorNeon,
+                0 0 200px $colorNeon;
+    transform:scaleZ(20);
+    font-weight: lighter;
+    color: rgb(224, 233, 186); 
+}
+
+@mixin shadow() {
+    border: 2px solid $colorShadow1;
+    background-color: $colorShadow1;
+    border-radius: 6px;
+    box-shadow: 0 0 5px $colorShadow1,
+                0 0 25px $colorShadow1;
+    opacity: 90%;
+}
+
+@mixin shadow2() {
+    border: 2px solid $colorShadow2;
+    background-color:$colorShadow2;
+    border-radius: 6px;
+    box-shadow: 0 0 5px $colorShadow2,
+                0 0 25px $colorShadow2;
+    opacity: 90%;
+    
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+} 
+
+
+
+@keyframes flor {
+    0% {
+        filter:none
+    }
+    50% {
+        filter:sepia();
+        transform:scaleY(1.05)scaleX(1.05);
+        
+    }
+    100% {
+        filter: none;
+    }
+
+}   

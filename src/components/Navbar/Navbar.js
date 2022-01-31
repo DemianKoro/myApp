@@ -1,7 +1,7 @@
 import './Navbar.scss';
 import CartWidget from './CartWidget/CartWidget';
 import NavIcon from './NavIcon/NavIcon';
-import CartCounter from './CartCounter/CartCounter';
+// import CartCounter from './CartCounter/CartCounter';
 import { Link } from "react-router-dom";
 
 
@@ -9,7 +9,6 @@ function Navbar() {
 
 
     return <nav className='nav'>
-                <Link to="/myApp"><h1>KALANCHOE</h1></Link>
                 <ul className='ulNav'>
                     <li>
                         <NavIcon/>
@@ -25,7 +24,7 @@ function Navbar() {
                     </li>
                     <li className='cartLi'>
                         <CartWidget />
-                        <CartCounter />
+                        {/* <CartCounter /> */}
                     </li>
                 </ul>
                 

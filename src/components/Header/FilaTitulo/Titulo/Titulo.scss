@@ -1,0 +1,28 @@
+@import"../../../../colors";
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap";
+
+.titulo {
+    display: flex;
+    grid-area: dos;
+    color: whitesmoke;
+    letter-spacing: .5rem;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    h1 {
+        margin-top: 0;
+        font-size: unset;
+        align-items: center;
+        width: 100%; 
+    }
+    h1:hover {
+       @include neon();
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+}

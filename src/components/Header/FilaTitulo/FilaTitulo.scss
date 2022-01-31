@@ -1,0 +1,9 @@
+.filaTitulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "uno cuatro dos dos dos tres tres";
+    grid-area: header__filaTitulo;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}

@@ -1,10 +1,13 @@
 import React from 'react';
-import HeaderPromoSlider from './HeaderPromoSlider';
+import PromoSlider from './PromoSlider/PromoSlider';
 import Navbar from '../Navbar/Navbar'
+import './Header.scss';
+import FilaTitulo from './FilaTitulo/FilaTitulo';
 
 const Header = () => {
   return  <div className="header">
-            <HeaderPromoSlider />
+            <PromoSlider />
+            <FilaTitulo />
             <Navbar />
           </div>
 };

@@ -1,0 +1,10 @@
+
+.header {
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    grid-template-areas: "header__promo"
+                         "header__filaTitulo";
+    grid-area: header;
+    background-image: unset;      
+}
+

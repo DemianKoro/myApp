@@ -1,0 +1,144 @@
+// @import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css";
+
+.mainProducto {
+    display: grid;
+    grid-template-rows: 1fr;
+                        
+    grid-template-columns: 0fr 0fr;
+    grid-template-areas: "imagenProducto1 carr";
+
+    .divImgProducto {
+    /*display: flex;*/
+    text-align: center;
+        
+    } 
+    
+    .imagenProducto1 {
+        grid-area: imagenProducto1;
+        margin: .5rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    .imagenProducto2 {
+        display: none;
+        grid-area: imagenProducto2;
+        margin: .5rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__carr {
+        grid-area: carr;
+        display: grid;
+        grid-template-rows: 0fr
+                            0fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "1"
+                             "2";
+        background-color: #d3d3cc;
+        margin: .5rem .5rem .8rem .5rem;
+
+        &__encabezado {
+            display: grid;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            grid-area: 1;
+            margin: .5rem 0 0 .5rem;
+            font-family: 'nunito';
+            justify-items: flex-start;
+        }
+                
+        &__form {
+            display: grid;
+            color: black;
+            margin: 0 0 0 .5rem;
+            grid-area: 2;
+
+            &__detalles {
+                h3:not(.simple):after {
+                    content: '+';
+                }
+                &__abierto :after {
+                    content: '\2212';
+                }
+                .card {
+                    border: none;
+                    background-color: unset;
+                    color: black;
+                    font-weight: bold;
+                    margin: 0 0 .5rem 0;
+                    letter-spacing: .2rem;
+                    padding: .5rem;
+                    font-size: .8rem;
+
+                }
+            }
+
+            &__descripcion {
+                
+                color: black;
+                font-weight: bold;
+                margin: 0 0 .5rem 0;
+                width: 550px;
+                
+
+            }
+
+            &__guiaBtn {
+                font-size: .8rem;
+                text-decoration: underline;
+            }
+            &__talles {
+                    width: 150px;
+                    color: grey;
+                }
+            &__span {
+                width: 25%;
+                color: grey;
+            }
+            &__inputCantidad {
+                width: 25%;
+                color: grey;
+                background-color: tomato;
+            }
+            &__comprar {
+                display: flex;
+                width: 75%;
+                margin: auto;
+                padding: 1rem 0rem 1rem 0rem;
+                &__btn {
+                    width: 100%;
+                    color: #fff;
+                    background-color: #063479;
+                    border-color: #063479;
+                }
+            }
+            &__volver {
+                display: flex;
+                width: 100px;
+                margin: 0rem 0rem 0rem 3.85rem;;
+                padding: 0rem 0rem 1rem 0rem;
+                &__btn {
+                    width: 100%;
+                    color: #fff;
+                    background-color: tomato;
+                    border-color: tomato;
+                }
+            }
+        }
+    }     
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .mainProducto {
+        grid-template-rows: 0fr
+                            0fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "imagenProducto1" 
+                             "carr";
+    }
+  }

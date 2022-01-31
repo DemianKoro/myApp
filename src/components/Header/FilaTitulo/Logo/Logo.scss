@@ -1,0 +1,29 @@
+@import "../../../../colors";
+
+.logo {
+  display: flex;
+  grid-area: uno;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+
+  img {
+    display: flex;
+    width: 3rem;
+    padding: 3vw 0 3vw 6vw;
+  }
+  img:hover {
+    filter: sepia(1.7);
+    filter: drop-shadow(1.7);
+    transition: all 1.5s;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    img {
+      width: 2rem;
+    }
+  }
+}
