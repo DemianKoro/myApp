@@ -1,5 +1,5 @@
 import './Navbar.scss';
-import CartWidget from './CartWidget/CartWidget';
+// import CartWidget from './CartWidget/CartWidget';
 import NavIcon from './NavIcon/NavIcon';
 // import CartCounter from './CartCounter/CartCounter';
 import { Link } from "react-router-dom";
@@ -21,10 +21,6 @@ function Navbar() {
                     </li>
                     <li>
                     <   Link to="/myApp/asdasd">CONTACT US</Link>
-                    </li>
-                    <li className='cartLi'>
-                        <CartWidget />
-                        {/* <CartCounter /> */}
                     </li>
                 </ul>
                 

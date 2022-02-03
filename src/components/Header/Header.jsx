@@ -4,6 +4,7 @@ import Navbar from '../Navbar/Navbar'
 import './Header.scss';
 import FilaTitulo from './FilaTitulo/FilaTitulo';
 
+
 const Header = () => {
   return  <div className="header">
             <PromoSlider />
