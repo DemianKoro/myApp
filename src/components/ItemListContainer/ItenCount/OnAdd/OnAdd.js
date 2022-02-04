@@ -1,49 +1,26 @@
 import './OnAdd.scss';
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Carrito from "../../../Header/LoginMenu/Carrito/Carrito"
+import { useContext } from 'react';
+import { ProductsContext } from '../../../../context/UserContext';
 
-function OnAdd(cant) {
 
-  const { id } = useParams();
-  const [product, setProduct] = useState();
-  const [isLoading, setIsLoading] = useState(false);
-  // const URL = `http://localhost:3001/productos/${id}`;
 
-  useEffect(() => {
-    const URL = `http://localhost:3001/productos/${id}`;
-    // console.log(product);
+function OnAdd({product}) {
 
-    setIsLoading(true);
-    fetch(URL)
-      .then((res) => res.json())
-      .then((data) => setProduct(data))
-      .finally(() => setIsLoading(false));
-  }, [id]);
-
+  const { isLoading, agregarProducto, borrarProducto, cambiarStock } = useContext(ProductsContext)
 
   const [stock, setStock] = useState(false); 
   const [qty, setQty] = useState(false)
   const ButtonAdd = () =>{
     setQty(!qty)
-    console.log(qty)
-  
+   
   }
-  // const ButtonQuit = () =>{
-  //   setStock(!stock)
   
+  // const setCart = () => {
+  //   console.log(stock)
   // }
-
-  // const setNewStock = () => {
-  //   product.stock = product.stock - stock
-  //   fetch(URL, {
-  //     method: "POST",
-  //     headers: { "Content-Type": "applicattion/json" },
-  //     body: product.stock
-  //   })
-  // }
-  
-  
+   
   if (isLoading || !product) return <p>Cargando...</p>;
   return (
     <div className="mainProducto__carr__form__imputCantidad">
@@ -63,6 +40,10 @@ function OnAdd(cant) {
           <p> {` (Disponibles: ${product.stock}u.)`} </p>
         </div>
         <button onClick={(() => {setStock( product.stock = product.stock - stock) })} type="button" className="mainProducto__carr__form__imputCantidad__botones__comprar2">Comprar</button> 
+        <button onClick={(() => agregarProducto())} type="button" className="mainProducto__carr__form__imputCantidad__botones__comprar3">nuevo producto</button> 
+        <button onClick={(() => borrarProducto(product.id))} type="button" className="mainProducto__carr__form__imputCantidad__botones__comprar4">borrar producto</button> 
+        <button onClick={(() => cambiarStock(product.id, product.stock))} type="button" className="mainProducto__carr__form__imputCantidad__botones__comprar3">Stock</button>
+
     </div>
   );
 

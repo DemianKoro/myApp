@@ -60,7 +60,7 @@ const ProductDetailPage = () => {
               L
             </option>
           </select>
-          <a id="botonTalle" className="mainProducto__carr__form__guiaBtn">
+          <a href="http//:google.com" id="botonTalle" className="mainProducto__carr__form__guiaBtn">
             Guía de Talles
           </a>
           <h4 className="mainProducto__carr_form__detalles__abierto" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Detalles del producto. </h4>
@@ -75,7 +75,7 @@ const ProductDetailPage = () => {
             Cantidad
           </span>
           {/* <CartWidget /> */}
-          <OnAdd />
+          <OnAdd key={product.id} product={product} />
           <div className="mainProducto__carr__form__volver">
             <button className="mainProducto__carr__form__volver__btn" onClick={() => navigate("/myApp/")}>Volver atrás.</button>
           </div>

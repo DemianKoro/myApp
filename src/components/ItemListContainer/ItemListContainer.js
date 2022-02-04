@@ -1,22 +1,12 @@
-import { useEffect, useState } from "react";
 import Item from "./Item/Item";
 import "./ItemListContainer.scss";
+import { useContext } from 'react';
+import { ProductsContext } from "../../context/UserContext";
 
-const URL = "http://localhost:3001/productos";
 
 const ItemContainer = () => {
-  const [prod, setProd] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    setIsLoading(true);
-    fetch(URL)
-      .then((response) => response.json())
-      .then((json) => setProd(json))
-      .catch((err) => setError(err))
-      .finally(() => setIsLoading(false));
-  }, []);
+  const { product, error, isLoading } = useContext(ProductsContext)
 
   if (isLoading) {
     return <p>Cargando Productos...</p>;
@@ -26,12 +16,14 @@ const ItemContainer = () => {
     return (
       <div>
         <ul className="item__container">
-          {prod.map((product) => {
+          {product.map((product) => {
             return <Item key={product.id} product={product} />;
           })}
         </ul>
       </div>
     );
+    
 };
+
 
 export default ItemContainer;

@@ -35,6 +35,28 @@
             
         }
         
+        &__comprar3 {
+            display: flex;
+            width: 100px;
+            justify-content: center;
+            color: #fff;
+            margin: 0rem 0rem 0rem 3.85rem;
+            background-color: #abc70b;
+            border-color: #abc70b;
+            
+        }
+
+        &__comprar4 {
+            display: flex;
+            width: 100px;
+            justify-content: center;
+            color: #fff;
+            margin: 0rem 0rem 0rem 3.85rem;
+            background-color: red;
+            border-color: red;
+            
+        }
+
         &__btn {
             display: flex;
             flex-direction: row;
