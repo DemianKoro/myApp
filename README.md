@@ -53,8 +53,9 @@ Este proyecto está bajo la Licencia (DemianKoro) - mira el archivo [LICENSE.md]
 ## Expresiones de Gratitud 🎁
 
 * A mi pareja que me apoya y me incentiva. ❤️
-* Al profesor Conrado Lanusse. 🤓
+* Al profesor Fabricio Borgobello. 🤓
 * Al tutor Dylan Gavilán. 🤓 
+* A la tutora Laura Therisod. 🤓 
 
 ---
 ⌨️ por [DemianKoro](https://github.com/DemianKoro) 😊

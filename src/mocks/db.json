@@ -7,7 +7,7 @@
       "descripcion": "Vestido corto estampado con mangas. Abierto adelante con pequeños botones, escote en V. Presenta botones en puños.",
       "imagen": "https://i.postimg.cc/5NWNNdHh/image01.jpg",
       "stock": 14,
-      "tipo": "Vestido"
+      "caterogiaId": 1
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "precio": 18800,
       "stock": 7,
       "imagen": "https://i.postimg.cc/qMcBNbyz/image02.jpg",
-      "tipo": "Sweater"
+      "caterogiaId": 2
     },
     {
       "id": 3,
@@ -25,18 +25,29 @@
       "precio": 19500,
       "stock": 2,
       "imagen": "https://i.postimg.cc/jSsxPH4v/image03.jpg",
-      "tipo": "Vestido"
-    },
-    {
-      "nombre": "Short Rings",
-      "descripcion": "Short cortito que muestra bastante.",
-      "precio": 5500,
-      "stock": 10,
-      "imagen": "https://i.postimg.cc/bNTzfT13/85.jpg",
-      "tipo": "Short",
-      "id": 4
+      "caterogiaId": 1
     }
   ],
+
+  "categoria": [
+    {
+      "id": 1,
+      "name": "Vestido"
+    },
+    {
+      "id": 2,
+      "name": "Sweater"
+    },
+    {
+      "id": 3,
+      "name": "Remera"
+    },
+    {
+      "id": 4,
+      "name": "Short"
+    }
+  ],
+
   "usuarios": [
     {
       "id": 0,

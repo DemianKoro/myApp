@@ -1,16 +1,19 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-// import "../components/ItemListContainer/Item/Item.scss"
+import React from "react";
+// import "../components/ItemContainer/Item/Item.scss"
 import "./ProductDetailPage.scss";
-import OnAdd from "../components/ItemListContainer/ItenCount/OnAdd/OnAdd";
+import OnAdd from "../components/ItemContainer/OnAdd/OnAdd";
 // import CartWidget from "../components/Navbar/CartWidget/CartWidget"
+// import ItemCount from "../components/ItemContainer/OnAdd/ItemCount/ItemCount";
 
 
 const ProductDetailPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState();
   const [isLoading, setIsLoading] = useState(false);
+  // const [counter, setCounter] = React.useState(0);
 
   useEffect(() => {
     const URL = `http://localhost:3001/productos/${id}`;
@@ -40,7 +43,7 @@ const ProductDetailPage = () => {
           <h1>{product.nombre}</h1>
           <h2>$ {product.precio}</h2>
         </div>
-        <form className="mainProducto__carr__form">
+        <div className="mainProducto__carr__form">
           <select
             name="talles"
             id=""
@@ -79,7 +82,8 @@ const ProductDetailPage = () => {
           <div className="mainProducto__carr__form__volver">
             <button className="mainProducto__carr__form__volver__btn" onClick={() => navigate("/myApp/")}>Volver atrás.</button>
           </div>
-        </form>
+        </div>
+                
       </div>
     </div>
   );

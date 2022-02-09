@@ -1,5 +1,5 @@
 // import { useNavigate } from "react-router-dom";
-import ItemListContainer from '../components/ItemListContainer/ItemListContainer';
+import ItemContainer from '../components/ItemContainer/ItemContainer';
 
 const HomePage = () => {
   
@@ -17,7 +17,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <ItemListContainer />
+      <ItemContainer />
       {/* <button onClick={goToProducts}>Ir a la página de productos</button> */}
     </div>
   );

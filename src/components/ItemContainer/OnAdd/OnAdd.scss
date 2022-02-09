@@ -1,0 +1,75 @@
+.mainProducto__carr__form__imputCantidad{
+    display: flex;
+    flex-direction: column;
+
+    &__cantidad {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 0 1rem 0;
+    }
+
+    &__botones {
+
+        display: flex;
+        flex-direction: row;
+
+        &__comprar {
+            display: flex;
+            width: 100px;
+            justify-content: center;
+            color: #fff;
+            background-color: #063479;
+            border-color: #063479;
+            
+        }
+
+        &__comprar2 {
+            display: flex;
+            width: 100px;
+            justify-content: center;
+            color: #fff;
+            margin: 0rem 0rem 0rem 3.85rem;
+            background-color: #067932;
+            border-color: #067932;
+            
+        }
+        
+        &__comprar3 {
+            display: flex;
+            width: 100px;
+            justify-content: center;
+            color: #fff;
+            margin: 0rem 0rem 0rem 3.85rem;
+            background-color: #abc70b;
+            border-color: #abc70b;
+            
+        }
+
+        &__comprar4 {
+            display: flex;
+            width: 100px;
+            justify-content: center;
+            color: #fff;
+            margin: 0rem 0rem 0rem 3.85rem;
+            background-color: red;
+            border-color: red;
+            
+        }
+
+        &__btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            
+        }
+      
+    }
+
+    
+}
+

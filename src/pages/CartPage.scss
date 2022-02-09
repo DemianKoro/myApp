@@ -1,0 +1,49 @@
+.carritoContainer {
+    color: ivory;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bodyContenedor {
+    
+    color: ivory;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    opacity: 70%;
+    &__condicion {
+        
+        color: ivory;
+        text-align: center;
+        // @extend .headerBox__filaTitulo__menu__offcanvas-body__nav;
+    }
+
+    &__detalleCompra {
+        // background-image: url(../img/fondo-negro.jpg);
+        // @extend .headerBox__filaTitulo__menu__offcanvas-body__nav;
+        width: 90%;
+        background-repeat: unset;
+        &__enunciados {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &__items {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+    }
+    &__confirm {
+        display: flex;
+        width: 75%;
+        margin: auto;
+        padding: 1rem 0rem 1rem 0rem;
+        &__btn {
+            width: 100%;
+            color: #fff;
+            background-color: #063479;
+            border-color: #063479;
+        }
+    }
+}
