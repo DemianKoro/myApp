@@ -1,11 +1,12 @@
 import * as React from "react";
+import { BiAlignJustify } from "react-icons/bi";
 import { useCart } from '../context/CartContext';
 import './CartPage.scss'
 // import { useNavigate } from "react-router-dom";
 
 
 const CartPage = () => {
-    const { cart } = useCart();
+    const { cart, borrarProductoEnCarrito, vaciarCarrito } = useCart();
     // const navigate = useNavigate();
 
   return (
@@ -42,13 +43,14 @@ const CartPage = () => {
                                     <p>$ {comprar.item.precio * comprar.cantidad}</p> 
                                 </td>
                                 <td className="bodyContenedor__detalleCompra__quitar" id="quitar">
-                                    <button id="quitar" type="button" className="btn-close btn-close-white" data-bs-dismiss="" aria-label="Close"></button>
+                                    <button onClick={() => borrarProductoEnCarrito(comprar.item.id)}>X</button>
                                 </td>
                             </tr>
                         </table>
                     </>
                 );
         })}
+        <button className="bodyContenedor__vaciarCarro" onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
     </div>
     );
 };

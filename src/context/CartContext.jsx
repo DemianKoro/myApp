@@ -12,15 +12,18 @@ export const CartProvider = ({children}) => {
         console.log('Se agregó correctamente', newItem)
     };
 
-    const borrarProductoEnCarrito = (item, cantidad) => {
-        const deleteItem = {item, cantidad };
-        setCart((prevState) => [...prevState]);
-        console.log('Se borró el item del carrito', deleteItem)
+    const borrarProductoEnCarrito = (id) => {
+        setCart((prev) => prev.filter((element) => element.item.id !== id));
+        console.log('Se borró el item del carrito')
+    }
+
+    const vaciarCarrito = () => {
+        setCart([]);
     }
 
 
   return (
-    <CartContext.Provider value={{ cart, grabarProductoEnCarrito, borrarProductoEnCarrito }}>
+    <CartContext.Provider value={{ cart, grabarProductoEnCarrito, borrarProductoEnCarrito, vaciarCarrito }}>
         {children}
     </CartContext.Provider>
  );
