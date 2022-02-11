@@ -56,25 +56,25 @@ export const ProductsProvider = ({ children }) => {
 
   // ↓↓↓ AGREGAR PRODUCTO de prueba (Falta reemplazar por producto de formulario) ↓ //
 
-  const agregarProducto = async () => {
-    const pushProduct = {
-      nombre: "Short Rings",
-      descripcion: "Short cortito que muestra bastante.",
-      precio: 5500,
-      stock: 10,
-      imagen: "https://i.postimg.cc/bNTzfT13/85.jpg",
-      tipo: "Short",
-    };
+  // const agregarProducto = async () => {
+  //   const pushProduct = {
+  //     nombre: "Short Rings",
+  //     descripcion: "Short cortito que muestra bastante.",
+  //     precio: 5500,
+  //     stock: 10,
+  //     imagen: "https://i.postimg.cc/bNTzfT13/85.jpg",
+  //     tipo: "Short",
+  //   };
 
-    const response = await fetch("http://localhost:3001/productos/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(pushProduct),
-    })
-    .then((console.log("Producto Agregado Exitosamente")));
+  //   const response = await fetch("http://localhost:3001/productos/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(pushProduct),
+  //   })
+  //   .then((console.log("Producto Agregado Exitosamente")));
 
-    return response.json();
-  };
+  //   return response.json();
+  // };
 
   // ↑↑↑ AGREGAR PRODUCTO de prueba (Falta reemplazar por producto de formulario) ↑ //
 
