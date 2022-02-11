@@ -17,7 +17,7 @@ const ProductsPage = () => {
 
   return (
     <div>
-      <ItemContainer  />
+      <ItemContainer />
       {/* <button onClick={goToProducts}>Ir a la página de productos</button> */}
     </div>
   );

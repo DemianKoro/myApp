@@ -5,12 +5,27 @@ CartContext.displayName = "CartContext";
 
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
-     
+    const [order, setOrder] = useState([]);
+
     const grabarProductoEnCarrito = (item, cantidad) => {
-        const newItem = {item, cantidad };
-        setCart((prevState) => [...prevState, newItem]);
-        console.log('Se agregó correctamente', newItem)
-    };
+        if (cantidad==0) {
+            alert('Debe ingresar una cantidad');
+            console.log('La cantidad no puede ser Cero. No se agregó nada al Carrito');
+        }
+        else {
+            const newItem = {item, cantidad };
+            setCart((prevState) => [...prevState, newItem]);
+            console.log('Se agregó correctamente', newItem)
+
+            const ITEMS = [];
+            
+            const CARRITO = [...ITEMS, newItem]
+            console.log('Carrito:',CARRITO)
+
+
+        }
+    }
+
 
     const borrarProductoEnCarrito = (id) => {
         setCart((prev) => prev.filter((element) => element.item.id !== id));
@@ -19,6 +34,7 @@ export const CartProvider = ({children}) => {
 
     const vaciarCarrito = () => {
         setCart([]);
+        console.log('Se vació el carrito');
     }
 
 

@@ -2,33 +2,59 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import React from "react";
-// import "../components/ItemContainer/Item/Item.scss"
 import "./ProductDetailPage.scss";
 import OnAdd from "../components/ItemContainer/OnAdd/OnAdd";
+import { getFirestore } from "../firebase";
+// import { ProductsContext } from '../context/ProductsContext';
+// import "../components/ItemContainer/Item/Item.scss"
 // import CartWidget from "../components/Navbar/CartWidget/CartWidget"
 // import ItemCount from "../components/ItemContainer/OnAdd/ItemCount/ItemCount";
 
 
 const ProductDetailPage = () => {
+
   const { id } = useParams();
   const [product, setProduct] = useState();
   const [isLoading, setIsLoading] = useState(false);
-  // const [counter, setCounter] = React.useState(0);
 
+  // // ↓ FIREBASE ↓ //
+   
   useEffect(() => {
-    const URL = `http://localhost:3001/productos/${id}`;
-    // console.log(product);
+    const db = getFirestore();
+    const productsCollection = db.collection("productos");
+    const selectedProduct = productsCollection.doc(id);
 
     setIsLoading(true);
-    fetch(URL)
-      .then((res) => res.json())
-      .then((data) => setProduct(data))
+    selectedProduct
+      .get()
+      .then((response) => {
+        if (!response.exists) console.log("El producto no existe");
+        setProduct({ ...response.data(), id: response.id });
+      })
       .finally(() => setIsLoading(false));
   }, [id]);
 
+  // // ↑ FIREBASE ↑ //
+
+  // ↓ FETCH METHOD ( reemplazado por el firebase) ↓ //
+
+  // useEffect(() => {
+  //   const URL = `http://localhost:3001/productos/${id}`;
+    
+  //   setIsLoading(true);
+  //   fetch(URL)
+  //     .then((res) => res.json())
+  //     .then((data) => setProduct(data))
+  //     .finally(() => setIsLoading(false));
+  // }, [id]);
+
+  // ↑ FETCH METHOD ( reemplazado por el firebase) ↑ //
+
+  
   const navigate = useNavigate();
 
   if (isLoading || !product) return <p>Cargando...</p>;
+
   return (
     <div className="mainProducto">
       <div className="mainProducto__img">

@@ -1,20 +1,58 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { getFirestore } from "../firebase";
+import React from "react";
+
 export const ProductsContext = createContext({});
 ProductsContext.displayName = "productsContext";
 
+
 export const ProductsProvider = ({ children }) => {
+  // const [data, setData] = React.useState([]);
   const [product, setProduct] = useState([]);
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  useEffect(() => {
-    setIsLoading(true);
-    fetch("http://localhost:3001/productos/")
-      .then((response) => response.json())
-      .then((json) => setProduct(json))
-      .catch((err) => setError(err))
-      .finally(() => setIsLoading(false));
+  // // ↓ FIREBASE ↓ //
+
+  React.useEffect(() => {
+    const db = getFirestore();
+    const productsCollection = db
+    .collection("productos")
+    // .where("categoriaId", "==", 1); // FILTRO
+    
+    productsCollection.get()
+
+    const getDataFromFirestore = async () => {
+      setIsLoading(true);
+      try {
+      const response = await productsCollection.get();
+      if(response.empty) {
+        console.log("No hay Productos");
+      }
+      setProduct(response.docs.map((doc) => ({...doc.data(), id: doc.id })));
+      } catch (err) {
+        setError(err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    getDataFromFirestore();
   }, []);
+  
+  // // ↑ FIREBASE ↑ //
+
+  // // ↓ FETCH METHOD ( reemplazado por el firebase) ↓ //
+
+  // useEffect(() => {
+  //   setIsLoading(true);
+  //   fetch("http://localhost:3001/productos/")
+  //     .then((response) => response.json())
+  //     .then((json) => setProduct(json))
+  //     .catch((err) => setError(err))
+  //     .finally(() => setIsLoading(false));
+  // }, []);
+
+  // // ↑ FETCH METHOD ( reemplazado por el firebase) ↑ //
 
   // ↓↓↓ AGREGAR PRODUCTO de prueba (Falta reemplazar por producto de formulario) ↓ //
 

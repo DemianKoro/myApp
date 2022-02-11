@@ -8,7 +8,7 @@ const Item = ({ product }) => {
 
   return (
     <>
-      <Link to={`/myApp/products/${product.id}`}>
+      <Link to={`/myApp/products/${product.id}`} key={product.id} product={product}>
         <div className="item__card">
           <div className="img__container">
             <img src={product.imagen} alt={product.nombre} />

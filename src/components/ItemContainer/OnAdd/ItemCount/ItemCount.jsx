@@ -8,10 +8,10 @@ import { CartContext } from '../../../../context/CartContext';
 const ItemCount = ({ counter, setCounter, product }) => {
 
   const { cart, grabarProductoEnCarrito } = useContext(CartContext);
+  // const [manejador, setManejador] = useState(false); 
 
   const handleClick = () => {
     grabarProductoEnCarrito(product, counter);
-    console.log (cart)
   };
 
   return <>
