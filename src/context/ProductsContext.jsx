@@ -113,7 +113,7 @@ export const ProductsProvider = ({ children }) => {
   // ↑↑↑ CAMBIAR STOCK ↑ //
 
   return (
-    <ProductsContext.Provider value={{product, error, isLoading, agregarProducto, borrarProducto, cambiarStock, }}>
+    <ProductsContext.Provider value={{product, error, isLoading, borrarProducto, cambiarStock, }}>
       {children}
     </ProductsContext.Provider>
   );
