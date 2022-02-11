@@ -80,40 +80,40 @@ export const ProductsProvider = ({ children }) => {
 
   // ↓↓↓ BORRAR PRODUCTO ↓ //
 
-  function borrarProducto(id) {
-    fetch("http://localhost:3001/productos/" + id, {
-      method: "DELETE",
-    })
-      .then(() => {
-        console.log("removed");
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }
+  // function borrarProducto(id) {
+  //   fetch("http://localhost:3001/productos/" + id, {
+  //     method: "DELETE",
+  //   })
+  //     .then(() => {
+  //       console.log("removed");
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //     });
+  // }
 
   // ↑↑↑ BORRAR PRODUCTO ↑ //
 
   // ↓↓↓ CAMBIAR STOCK ↓ //
 
-  function cambiarStock(id, stock) {
-    fetch("http://localhost:3001/productos/" + id, {
-      method: "PATCH",
-      body: JSON.stringify({stock})
-    })
-      // .then(() => {console.log("Stock actualizado");})
-      .then((response) => response.json())
-      .then((json) => setProduct(json))
-      .catch(err => {
-      console.error(err)
-    })
+  // function cambiarStock(id, stock) {
+  //   fetch("http://localhost:3001/productos/" + id, {
+  //     method: "PATCH",
+  //     body: JSON.stringify({stock})
+  //   })
+  //     // .then(() => {console.log("Stock actualizado");})
+  //     .then((response) => response.json())
+  //     .then((json) => setProduct(json))
+  //     .catch(err => {
+  //     console.error(err)
+  //   })
     
-  }
+  // }
 
   // ↑↑↑ CAMBIAR STOCK ↑ //
 
   return (
-    <ProductsContext.Provider value={{product, error, isLoading, borrarProducto, cambiarStock, }}>
+    <ProductsContext.Provider value={{product, error, isLoading  }}>
       {children}
     </ProductsContext.Provider>
   );
