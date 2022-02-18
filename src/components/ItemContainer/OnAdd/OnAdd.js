@@ -3,8 +3,9 @@ import * as React from "react";
 import Carrito from "../../Header/LoginMenu/Carrito/Carrito"
 import { useContext, useState } from 'react';
 import { ProductsContext } from '../../../context/ProductsContext';
-// import { CartContext } from '../../../context/CartContext';
+import { CartContext } from '../../../context/CartContext';
 import ItemCount from '../OnAdd/ItemCount/ItemCount';
+import { GiShoppingBag } from 'react-icons/gi'
 
 
 
@@ -12,10 +13,10 @@ import ItemCount from '../OnAdd/ItemCount/ItemCount';
 function OnAdd({product}) {
 
   const { isLoading, agregarProducto, borrarProducto, cambiarStock } = useContext(ProductsContext);
-  // const { cart, grabarProductoEnCarrito } =useContext(CartContext);
+  const { cart, grabarProductoEnCarrito, counter, setCounter } =useContext(CartContext);
 
-  const [counter, setCounter] = React.useState(0);
-  const [stock, setStock] = useState(false); 
+  // const [counter, setCounter] = React.useState(0);
+  // const [stock, setStock] = useState(false); 
   // const [qty, setQty] = useState(false)
   // const ButtonAdd = () =>{
   //   setQty(!qty)
@@ -30,7 +31,7 @@ function OnAdd({product}) {
   return (
     <div className="mainProducto__carr__form__imputCantidad">
         <div className='mainProducto__carr__form__imputCantidad__cantidad'>
-          <Carrito /> {counter ? <p>{counter}</p> : <p>0</p>}
+        <GiShoppingBag className='img'/> {counter ? <p>{counter}</p> : <p>0</p>}
         </div>
         {/* <div className="mainProducto__carr__form__imputCantidad__botones">
           

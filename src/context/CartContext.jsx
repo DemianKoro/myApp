@@ -1,45 +1,48 @@
 import {createContext, useContext, useState} from 'react';
+import React from 'react';
 export const CartContext = createContext({});
 CartContext.displayName = "CartContext";
 
 
 export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
-    const [order, setOrder] = useState([]);
+    const [counter, setCounter] = React.useState(0);
+    let Order = [];
 
     const grabarProductoEnCarrito = (item, cantidad) => {
-        if (cantidad==0) {
+        if (cantidad===0) {
             alert('Debe ingresar una cantidad');
             console.log('La cantidad no puede ser Cero. No se agregó nada al Carrito');
         }
         else {
             const newItem = {item, cantidad };
+                                  
             setCart((prevState) => [...prevState, newItem]);
             console.log('Se agregó correctamente', newItem)
-
-            const ITEMS = [];
-            
-            const CARRITO = [...ITEMS, newItem]
-            console.log('Carrito:',CARRITO)
-
+           
+            Order = [...cart, newItem];
+            console.log('Carrito:',[Order])
 
         }
     }
 
+    
 
     const borrarProductoEnCarrito = (id) => {
         setCart((prev) => prev.filter((element) => element.item.id !== id));
-        console.log('Se borró el item del carrito')
+        Order = ((prev) => prev.filter((element) => element.item.id !== id)); 
+        console.log('Se borró el item del carrito' )
     }
 
     const vaciarCarrito = () => {
         setCart([]);
-        console.log('Se vació el carrito');
+        Order = ([]);
+        console.log('Se vació el carrito', Order);
     }
 
 
   return (
-    <CartContext.Provider value={{ cart, grabarProductoEnCarrito, borrarProductoEnCarrito, vaciarCarrito }}>
+    <CartContext.Provider value={{ cart, grabarProductoEnCarrito, borrarProductoEnCarrito, vaciarCarrito, counter, setCounter }}>
         {children}
     </CartContext.Provider>
  );

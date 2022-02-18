@@ -37,6 +37,8 @@ _No requiere_
 * [GIT](https://git-scm.com/) - Repository branch manager
 * [GITHUB](https://github.com/) - Repository online
 * [REACT](https://es.reactjs.org/) - Librería de Js
+* [FIREBASE](https://firebase.org/) - Base de Datos
+
 
 
 
@@ -60,7 +62,8 @@ Este proyecto está bajo la Licencia (DemianKoro) - mira el archivo [LICENSE.md]
 ---
 ⌨️ por [DemianKoro](https://github.com/DemianKoro) 😊
 
-cd Users\Public\C O D E R  H O U S E\3 - R E A C T\myApp\demian-app\          
+cd Users\Public\C O D E R  H O U S E\3 - R E A C T\myApp\demian-app\         
+Z:\ cd C O D E R  H O U S E\3 - R E A C T\myApp> 
 
 npm run json-server
 

@@ -94,7 +94,7 @@ export const ProductsProvider = ({ children }) => {
 
   // ↑↑↑ BORRAR PRODUCTO ↑ //
 
-  // ↓↓↓ CAMBIAR STOCK ↓ //
+  // ↓↓↓ CAMBIAR STOCK (No funciona) ↓ //
 
   // function cambiarStock(id, stock) {
   //   fetch("http://localhost:3001/productos/" + id, {

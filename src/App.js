@@ -8,6 +8,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import { ProductsProvider } from './context/ProductsContext';
 import { CartProvider } from './context/CartContext';
 import CartPage from './pages/CartPage';
+import DbPage from './pages/DbPage';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
                 </Route>
                 <Route path="cartPage" element={<CartPage />} />
                 <Route path="*" element={<NotFoundPage />} />
+                <Route path="dbPage" element={<DbPage />} />
             </Route>
           </Routes>
         </BrowserRouter>
