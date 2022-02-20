@@ -1,7 +1,9 @@
 import {createContext, useContext, useState} from 'react';
 import React from 'react';
+import swal from 'sweetalert';
 export const CartContext = createContext({});
 CartContext.displayName = "CartContext";
+
 
 
 export const CartProvider = ({children}) => {
@@ -11,7 +13,7 @@ export const CartProvider = ({children}) => {
 
     const grabarProductoEnCarrito = (item, cantidad) => {
         if (cantidad===0) {
-            alert('Debe ingresar una cantidad');
+            swal('Debe ingresar una cantidad');
             console.log('La cantidad no puede ser Cero. No se agregó nada al Carrito');
         }
         else {

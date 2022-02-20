@@ -27,7 +27,7 @@ const CartPage = () => {
         {
                 return (
                 <>
-                    <table className="bodyContenedor__detalleCompra" id="detalleCompra">
+                    <table key={comprar.item.id} className="bodyContenedor__detalleCompra" id="detalleCompra">
                         <tr className="bodyContenedor__detalleCompra__items">  
                             <td className="bodyContenedor__detalleCompra__foto" id="foto">
                                 <img id="fotoCompra" src= {comprar.item.imagen} style={{width:"3rem"}} alt=""></img>

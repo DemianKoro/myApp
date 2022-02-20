@@ -1,0 +1,29 @@
+.dbPage {
+
+    &__body{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 0fr 0fr;
+        grid-template-areas: "imagenContainer form";
+
+        &__imagenContainer {
+            grid-area: imagenContainer;
+            width: 250px;
+            img {
+                width: 250px;
+            }
+        }
+
+    }
+    color: ivory;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
