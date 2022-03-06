@@ -1,6 +1,7 @@
 import React from "react";
 import { getFirestore } from "../firebase";
-import "./DbPage.scss"
+import "./DbPage.scss";
+
 
 // ↓ Constante para subir un producto ya declarado en un objeto ↓ a Firestore //
 
@@ -47,7 +48,7 @@ import "./DbPage.scss"
 //   },
 // ];
 
-// para hacer un form de carga de producto, ver video GMT20220209-220719_Recording_1920x1080 de la clase 13 FireBase II ( MINUTO : 00:48 aprox) //
+// ↓ Form para crear producto nuevo y subirlo a la base de datos ↓ //
 
 const DbPage = () => {
   const db = getFirestore();
@@ -57,7 +58,7 @@ const DbPage = () => {
   const [precio, setPrecio] = React.useState("");
   const [descripcion, setDescripcion] = React.useState("");
   const [stock, setStock] = React.useState("");
-  const [categotriaId, setCategoriaId] = React.useState("");
+  const [categoriaId, setCategoriaId] = React.useState("");
   const [imagen, setImagen] = React.useState("");
 
   const handleSubmit = (evt) => {
@@ -71,7 +72,7 @@ const DbPage = () => {
     precio,
     imagen,
     stock,
-    categotriaId,
+    categoriaId,
   };
 
   const crearProductoEnFirestore = () => {
@@ -105,6 +106,7 @@ const DbPage = () => {
             type="text"
             id="name"
             name="name"
+            required="requiered"
             placeholder="Nombre del Producto"
             value={nombre}
             onChange={e=>setNombre(e.target.value)}
@@ -114,6 +116,7 @@ const DbPage = () => {
             type="number"
             id="precio"
             name="precio"
+            required="requiered"
             placeholder="precio del Producto"
             value={precio}
             onChange={e=>setPrecio(e.target.value)}
@@ -123,6 +126,7 @@ const DbPage = () => {
             type="number"
             id="stock"
             name="stock"
+            required="requiered"
             placeholder="Cantidad en Stock"
             value={stock}
             onChange={e=>setStock(e.target.value)}
@@ -132,6 +136,7 @@ const DbPage = () => {
             type="text"
             id="descripcion"
             name="descripcion"
+            required="requiered"
             placeholder="Decripción del Producto"
             value={descripcion}
             onChange={e=>setDescripcion(e.target.value)}
@@ -141,15 +146,17 @@ const DbPage = () => {
             type="number"
             id="categoriaId"
             name="caterogiaId"
+            required="requiered"
             placeholder="Número de tipo de Producto"
-            value={categotriaId}
+            value={categoriaId}
             onChange={e=>setCategoriaId(e.target.value)}
           />
           Url de la imágen <label htmlFor="imagen"></label>
           <input
             type="text"
             id="imagen"
-            name="iamgen"
+            name="imagen"
+            required="requiered"
             placeholder="Url de la Imágen"
             value={imagen}
             onChange={e=>setImagen(e.target.value)}

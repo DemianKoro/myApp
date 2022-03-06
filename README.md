@@ -63,7 +63,7 @@ Este proyecto está bajo la Licencia (DemianKoro) - mira el archivo [LICENSE.md]
 ⌨️ por [DemianKoro](https://github.com/DemianKoro) 😊
 
 cd Users\Public\C O D E R  H O U S E\3 - R E A C T\myApp\demian-app\         
-Z:\ cd C O D E R  H O U S E\3 - R E A C T\myApp> 
+Z:\C O D E R  H O U S E\3 - R E A C T\myApp\demian-app>
 
 npm run json-server
 

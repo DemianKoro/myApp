@@ -1,13 +1,15 @@
 import React from "react";
-import { BiSearch } from "react-icons/bi";
+// import { BiSearch } from "react-icons/bi";
+import { VscNewFile} from "react-icons/vsc";
+
 import { Link } from 'react-router-dom';
 import "./Search.scss";
 
 const Search = () => {
   return (
     <>
-      <Link to="/myApp/DbPage">
-        <BiSearch className="img" />
+      <Link title="Agregar nuevo Producto" to="/myApp/DbPage">
+        <VscNewFile className="img" />
       </Link>
     </>
   );

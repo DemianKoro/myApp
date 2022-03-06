@@ -8,19 +8,11 @@ const Item = ({ product }) => {
 
   return (
     <>
-      <Link to={`/myApp/products/${product.id}`} key={product.id} product={product}>
-        <div className="item__card">
-          <div className="img__container">
+      <Link to={`/myApp/products/${product.id}`} >
+        <div className="mainHome">
+          <div id={`linkProd${product.id}`} data-aos="fade-up" data-aos-duration="3000" className={`image${product.id}`}>
             <img src={product.imagen} alt={product.nombre} />
           </div>
-          {/* <div className="descripcion">
-            <p>{product.nombre}</p>
-            <p>Descripcion: {product.descripcion}</p>
-            <p>Precio: $ {product.precio}</p>
-            {/* <button onClick={() => navigate(`/myApp/products/${product.id}`)}>
-              Ver más...
-            </button> */}
-          {/* //</div> */}
         </div>
       </Link>
     </>

@@ -14,7 +14,7 @@ const Carrito = () => {
         <>
             <Link to="/myApp/cartPage" >
             <GiShoppingBag className='img'/>
-            <p>{counter ? <p>{counter}</p> : <p>{""}</p>}</p>
+            <div>{counter ? <p className='showCounter'>{counter}</p> : <p className='showCounter'>{""}</p>}</div>
             </Link>
         </>
     )

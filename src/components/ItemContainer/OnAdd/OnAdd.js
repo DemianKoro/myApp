@@ -31,7 +31,8 @@ function OnAdd({product}) {
   return (
     <div className="mainProducto__carr__form__imputCantidad">
         <div className='mainProducto__carr__form__imputCantidad__cantidad'>
-        <GiShoppingBag className='img'/> {counter ? <p>{counter}</p> : <p>0</p>}
+        <GiShoppingBag className='img'/> 
+        {counter ? <p className='showCounter'>{counter}</p> : <p className="showCounter">0</p>}
         </div>
         {/* <div className="mainProducto__carr__form__imputCantidad__botones">
           

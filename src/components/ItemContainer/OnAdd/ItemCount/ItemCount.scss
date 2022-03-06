@@ -7,7 +7,7 @@
 
 }
 .btn {
-    background-color: tomato;
+    
     width: 1rem;
     margin: 0.5rem;
 }
@@ -84,6 +84,7 @@
         &__btn {
             display: flex;
             flex-direction: row;
+            height: fit-content;
             justify-content: center;
             align-items: center;
             width: 20px;

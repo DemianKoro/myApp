@@ -14,13 +14,13 @@ const ItemContainer = () => {
     return <p>Ha habido un error {error.message}</p>;
   } else
     return (
-      <div>
-        <ul className="item__container">
+      <>
+        <ul className="mainBox">
           {product.map((product) => {
             return <Item key={product.id} product={product} />;
           })}
         </ul>
-      </div>
+      </>
     );
     
 };

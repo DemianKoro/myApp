@@ -25,7 +25,7 @@ const CartPage = () => {
         </table>
         {cart.map((comprar) => 
         {
-                return (
+            return (
                 <>
                     <table key={comprar.item.id} className="bodyContenedor__detalleCompra" id="detalleCompra">
                         <tr className="bodyContenedor__detalleCompra__items">  
